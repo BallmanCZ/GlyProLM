@@ -1,5 +1,5 @@
 # GlyProLM
-GlyProLM uses Distance Residue (DR, dmax=3) features to represent protein sequences and applies Cluster Centroids Undersampling (CCU) to address the imbalance between positive and negative samples, ensuring more representative training data.
+GlyProLM uses Distance Residue features to represent protein sequences and applies Cluster Centroids Undersampling (CCU) to address the imbalance between positive and negative samples, ensuring more representative training data.
 
 On this basis, the protein pre-trained model ProtGPT2 is introduced to generate 1280-dimensional semantic embeddings, capturing the contextual information of protein sequences. A univariate F-test is then applied to reduce the feature dimension to 300, minimizing redundancy and improving generalization.
 
