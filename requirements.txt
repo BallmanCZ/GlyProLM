@@ -1,0 +1,7 @@
+numpy>=1.21
+torch>=1.10
+transformers>=4.20
+scikit-learn>=1.0
+lightgbm>=3.3
+joblib>=1.1
+shap>=0.41
