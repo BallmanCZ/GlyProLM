@@ -241,7 +241,7 @@ def main():
         hidden_size=hidden_size,
         num_layers=num_layers,
     ).to(device)
-    model.load_state_dict(torch.load("best_model6.pth"))
+    model.load_state_dict(torch.load("best_model.pth"))
     model.eval()
     feature_extractor = ProtGPT2FeatureExtractor(
         r"...\models--nferruz--ProtGPT2\snapshots\f71aa6cf063ad784ebd53881d11332fd098eaa58"
