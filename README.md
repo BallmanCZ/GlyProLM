@@ -68,31 +68,49 @@ Dependencies can be installed manually, for example:
 ```bash
 pip install torch transformers numpy scikit-learn joblib
 
-If a requirements.txt file is provided, they can also be installed using:
+If a `requirements.txt` file is provided, the dependencies can also be installed using:
 
+```bash
 pip install -r requirements.txt
-How to Run
-Independent Testing / Inference
+```
+
+---
+
+## How to Run
+
+### Independent Testing / Inference
 
 To perform independent testing using the released trained model:
 
+```bash
 cd test
 python test.py
+```
 
-This script uses the trained checkpoint (best_model.pth) together with the feature selector (selector.joblib) and reads the corresponding dataset files for evaluation.
+This script uses the trained checkpoint (`best_model.pth`) together with the feature selector (`selector.joblib`) and reads the corresponding dataset files for evaluation.
 
-Reproducibility and Availability
+---
+
+## Reproducibility and Availability
 
 To improve the reproducibility and usability of this work, the source code, datasets, and trained model weights are all publicly available in this repository. The repository includes the trained checkpoint, the associated inference files, and the testing code required for reproducing the prediction pipeline without retraining the model from scratch.
 
-Notes
-Please ensure that the model-loading path in the testing script is consistent with the released checkpoint file name (best_model.pth).
-Please ensure that all required dependencies are installed before running the testing code.
-If additional path configuration is needed in your local environment, please update the script accordingly.
-Citation
+---
+
+## Notes
+
+- Please ensure that the model-loading path in the testing script is consistent with the released checkpoint file name (`best_model.pth`).
+- Please ensure that all required dependencies are installed before running the testing code.
+- If additional path configuration is needed in your local environment, please update the script accordingly.
+
+---
+
+## Citation
 
 If you find this work useful, please cite the corresponding paper of GlyProLM.
 
-Conclusion
+---
+
+## Conclusion
 
 GlyProLM provides an effective framework for lysine glycation site prediction by integrating sequence-derived features, protein language model embeddings, feature selection, and deep learning. By making the code, datasets, and trained model weights publicly available, this repository aims to support transparent, reproducible, and convenient reuse by the research community.
