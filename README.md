@@ -67,6 +67,7 @@ Dependencies can be installed manually, for example:
 
 ```bash
 pip install torch transformers numpy scikit-learn joblib
+```
 
 If a `requirements.txt` file is provided, the dependencies can also be installed using:
 
